@@ -8,4 +8,5 @@ return "this is async/await example"
 asAw().then(function(output)
 {
 console.log(output)
-})
+}) 
+
