@@ -14,24 +14,30 @@ const Navbar=()=>{
                  <li><Link to='/About' className="link">About</Link></li>
                  <li><Link to='/Gallery' className="link">Gallery</Link></li>
                  <li><Link to='/Contact' className="link">Contact</Link></li>
+                 
                  <div className="dropdown">
-                        <div  className="link" onClick={(toggleDropDown)} onLeave={(toggleDropDown)}>Hooks</div>
+                        <div   onClick={(toggleDropDown)} onLeave={(toggleDropDown)}>Hooks</div>
                         {dropdown &&(
                             <ul className="dropdown-menu">
-                                <li><Link to="/usestate" >UseState</Link></li>
-                                <li><Link to="/useeffect">UseEffect</Link></li>
-                                <li><Link to="/useeffectapi">UseEffectAPI</Link></li>
-                                <li><Link to="/useref">UseRef</Link></li>
-                                <li><Link to="/usereducer">UseReducer</Link></li>
-                                <li><Link to="/usememo">UseMemo</Link></li>
-                                <li><Link to="/callback">UseCallback</Link></li>
-                                
+                                <li><Link to="/usestate" className="link">UseState</Link></li>
+                                <li><Link to="/useeffect" className="link">UseEffect</Link></li>
+                                <li><Link to="/useeffectapi" className="link">UseEffectAPI</Link></li>
+                                <li><Link to="/useref" className="link">UseRef</Link></li>
+                                <li><Link to="/usereducer" className="link">UseReducer</Link></li>
+                                <li><Link to="/usememo" className="link">UseMemo</Link></li>
+                                <li><Link to="/callback" className="link">UseCallback</Link></li>
+                                <li><Link to='/reactlifecycle' className="link">ReactLifecycleMethods</Link></li>
+                                <li><Link to='/student'className="link" >Student</Link></li>
+                                                         
 
 
                             </ul>)}
                     </div>
+                <li><Link to='/memo' className="link">Memo</Link></li>
                  <li><Link to='/Signup' className="link">Signup</Link></li>
                  <li><Link to='/Login' className="link">Login</Link></li>
+
+
                  
 
              </ol>

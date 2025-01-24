@@ -13,6 +13,10 @@ import UseReducer from "./components/FunctionalComponent/Hooks/UseReducer.jsx"
 import UseRef from "./components/FunctionalComponent/Hooks/UseRef.jsx"
 import UseMemo from "./components/FunctionalComponent/Hooks/UseMemo.jsx"
 import UseCallback from "./components/FunctionalComponent/Hooks/UseCallback.jsx"
+import ReactLifecycleMethods from "./components/ClassComponent/ReactLifecycleMethods.jsx"
+import Student from "./components/FunctionalComponent/Hooks/Student.jsx"
+import Memo from "./components/FunctionalComponent/Memoization/Memo.jsx"
+
 function App() {
   return (
     <BrowserRouter>
@@ -32,7 +36,10 @@ function App() {
         <Route path="/useref" element={<UseRef />}></Route>
         <Route path="/usememo" element={<UseMemo />}></Route>
         <Route path="/callback" element={<UseCallback />}></Route>
-
+        <Route path="/reactlifecycle" element={<ReactLifecycleMethods />}></Route>
+        <Route path="/student" element={<Student />}></Route>
+        <Route path="/memo" element={<Memo />}></Route>
+       
 
 
       </Routes>
