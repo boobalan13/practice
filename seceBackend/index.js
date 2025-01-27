@@ -3,6 +3,7 @@ const path=require('path')
 const mdb=require('mongoose')
 const dotenv=require('dotenv')
 const Signup=require("./models/signupSchema")
+const Login=require("./models/loginSchema")
 dotenv.config()
 const app = express()
 app.use(express.json())
@@ -38,6 +39,20 @@ console.log(firstName,lastName,userName,ElementInternals,password)
 res.json("Values received");*/
 })
 
+app.post('/login',(req,res)=>{
+    var{userName,password}=req.body
+    try{
+        const newLogin=new Login({
+        userName:userName,
+        password:password
+    })
+    newLogin.save()
+    res.status(201).send("Login Successful")
+    }
+    catch(err) {
+        res.status(400).send("Login Unsuccessful",err)
+    }
+    })
 
 app.get('/getsignupdet',async(request,res)=>{
     varsignUpdet=await Signup.find()
