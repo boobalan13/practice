@@ -18,7 +18,7 @@ import Student from "./components/FunctionalComponent/Hooks/Student"
 import Memo from "./components/FunctionalComponent/Memoization/Memo"
 import UseLocalStorage from "./components/FunctionalComponent/Hooks/UseLocalStorage"
 import HoC from "./components/FunctionalComponent/HoC/HoC"
-import LazyloadingWithsuspense from "./components/FunctionalComponent/Memoization/LazyLoadingWithSuspense"
+import LazyloadingWithsuspense from "./components/FunctionalComponent/Memoization/LazyloadingWithsuspense"
 
 function App() {
   return (
