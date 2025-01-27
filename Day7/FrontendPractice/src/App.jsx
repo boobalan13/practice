@@ -16,9 +16,9 @@ import UseCallback from "./components/FunctionalComponent/Hooks/UseCallback"
 import ReactLifecycleMethods from "./components/ClassComponent/ReactLifecycleMethods"
 import Student from "./components/FunctionalComponent/Hooks/Student"
 import Memo from "./components/FunctionalComponent/Memoization/Memo"
-import LazyloadingWithsuspense from "./components/FunctionalComponent/Memoization/LazyLoadingWithSuspense"
 import UseLocalStorage from "./components/FunctionalComponent/Hooks/UseLocalStorage"
 import HoC from "./components/FunctionalComponent/HoC/HoC"
+import LazyloadingWithsuspense from "./components/FunctionalComponent/Memoization/LazyLoadingWithSuspense"
 
 function App() {
   return (
